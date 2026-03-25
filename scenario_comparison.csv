@@ -1,0 +1,9 @@
+scenario,vehicle_type,mean_net_earn,median_net_earn,total_revenue,n_trips,fleet_share_pct
+A: Surge cap 1.5×,EV,18.404,14.88,48404.49,2008,40.2
+A: Surge cap 1.5×,Non-EV,22.033,16.09,90229.33,2992,59.8
+B: Surge cap + $40 peak bonus,EV,30.017,20.405,48404.49,2008,40.2
+B: Surge cap + $40 peak bonus,Non-EV,22.033,16.09,90229.33,2992,59.8
+Baseline,EV,24.106,17.52,62717.39,2008,40.2
+Baseline,Non-EV,22.033,16.09,90229.33,2992,59.8
+C: Off-peak discount + subsidy,EV,18.404,14.88,45040.59,2008,40.2
+C: Off-peak discount + subsidy,Non-EV,22.033,16.09,90229.33,2992,59.8
