@@ -1,0 +1,11 @@
+slide,title,key_plot,phase
+1,Title + project overview,(text slide),—
+2,Dataset design,plot_p7_model_table.png,P1+P7
+3,Demand patterns (EDA),plot1_demand_patterns.png,P2
+4,Surge + EV earnings (EDA),plot2a + plot3,P2
+5,RF demand model,plot_rf_actual_vs_pred.png,P3
+6,XGBoost surge + heatmap,plot_xgb_surge_heatmap.png,P4
+7,Incentive scenario dashboard,plot_p7_dashboard.png,P5+P7
+8,EV adoption S-curve + ROC,plot_p6_adoption_scurve.png,P6
+9,Sensitivity analysis,plot_p7_sensitivity_heatmap.png,P7
+10,Policy recommendation,policy_recommendation.txt,P7

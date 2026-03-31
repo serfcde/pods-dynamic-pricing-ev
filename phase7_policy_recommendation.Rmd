@@ -1,0 +1,50 @@
+---
+title: "Dynamic Pricing Analysis for Ride-Sharing EV Fleets"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE,
+                      fig.width=10, fig.height=5.5)
+library(tidyverse); library(scales); library(patchwork); library(gt)
+```
+
+## 1. Dataset
+```{r}
+glimpse(read_csv("trips_data_with_surge_pred.csv", show_col_types=FALSE))
+```
+
+## 2. EDA
+```{r, out.width="100%"}
+knitr::include_graphics("plot1_demand_patterns.png")
+knitr::include_graphics("plot3_earnings_comparison.png")
+```
+
+## 3. Model performance
+```{r, out.width="100%"}
+knitr::include_graphics("plot_p7_model_table.png")
+```
+
+## 4. Scenario comparison
+```{r, out.width="100%"}
+knitr::include_graphics("plot_p7_dashboard.png")
+```
+
+## 5. Adoption S-curve + ROC
+```{r, out.width="100%"}
+knitr::include_graphics("plot_p6_adoption_scurve.png")
+knitr::include_graphics("plot_p6_roc_curve.png")
+```
+
+## 6. Sensitivity analysis
+```{r, out.width="100%"}
+knitr::include_graphics("plot_p7_sensitivity_heatmap.png")
+```
+
+## 7. Policy recommendation
+> **Recommended: Scenario B** — see phase7_policy_recommendation.txt
+

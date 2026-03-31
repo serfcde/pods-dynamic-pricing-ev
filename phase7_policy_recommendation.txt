@@ -1,0 +1,30 @@
+====================================================================
+POLICY RECOMMENDATION — Dynamic Pricing for EV Fleet Adoption
+====================================================================
+
+EXECUTIVE SUMMARY
+  Scenario B (surge cap 1.5× + $40 peak bonus) is recommended.
+  It restores EV earnings while sustaining an adoption advantage.
+
+BASELINE STATE
+  EV mean net earnings : $24.11 / trip
+  Non-EV mean earnings : $22.03 / trip
+  EV fleet share       : 40.2%
+
+MODEL VALIDATION
+  Random Forest  — RMSE: 0.9265 | R²: 0.9875
+  XGBoost        — RMSE: 0.1927 | R²: 0.8126
+  Logistic       — AUC:  0.7787 | Accuracy: 85%
+
+SCENARIO RESULTS (EV earnings)
+  A (cap only)       : earnings drop — not recommended standalone
+  B (cap + $40 bonus): $30.02 / trip  ← RECOMMENDED
+  C (off-peak subsidy): $18.4 / trip  ← complementary
+
+RECOMMENDATION
+  1. Deploy Scenario B for peak EV trips immediately.
+  2. Add Scenario C off-peak to cover remaining hours.
+  3. Adjust bonus monthly using S-curve tipping point.
+  4. Prioritise Downtown + Airport (Tier 1) zones first.
+====================================================================
+
