@@ -21,15 +21,15 @@ set.seed(42)
 cat("Loading data and models...\n")
 
 # Data
-trips       <- read_csv("data/trips_data_with_surge_pred.csv", show_col_types = FALSE)
-demand      <- read_csv("data/demand_data_with_predictions.csv", show_col_types = FALSE)
-scenarios   <- read_csv("data/scenario_comparison.csv", show_col_types = FALSE)
-drivers     <- read_csv("data/driver_data.csv", show_col_types = FALSE)
+trips       <- read_csv("../data/trips_data_with_surge_pred.csv", show_col_types = FALSE)
+demand      <- read_csv("../data/demand_data_with_predictions.csv", show_col_types = FALSE)
+scenarios   <- read_csv("../data/scenario_comparison.csv", show_col_types = FALSE)
+drivers     <- read_csv("../data/driver_data.csv", show_col_types = FALSE)
 
 # Models
-rf_model    <- readRDS("models/rf_model.rds")
-xgb_model   <- xgboost::xgb.load("models/xgb_model.bin")
-logit_model <- readRDS("models/logit_model.rds")
+rf_model    <- readRDS("../models/rf_model.rds")
+xgb_model   <- xgboost::xgb.load("../models/xgb_model.bin")
+logit_model <- readRDS("../models/logit_model.rds")
 
 cat("✓ Data loaded successfully\n")
 
